@@ -124,7 +124,6 @@ export default function index() {
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer to</p>
                 </div>
-
             </div>
             <hr className={'border-dashed border-white border-opacity-15 container mx-auto bg-transparent borer-1'}/>
             <div className="brands ">
@@ -136,7 +135,6 @@ export default function index() {
 
                 </div>
             </div>
-
             <div className="slider">
                 <Splide
                     options={ {
@@ -153,19 +151,14 @@ export default function index() {
                             speed: 1,
                         }
                     }}
-                    extensions={ { AutoScroll } }
-                    >
+                    extensions={ { AutoScroll } }>
                     {brands.map((number) => (
                         <SplideSlide className={'rounded-2xl bg-[#232142] hover:bg-[#8479E6] py-4 duration-300 flex items-center justify-center'} key={number}>
-
                             <div className="carousel-itemtext-center flex justify-center items-center">
                                 <img src={`/images/brands/brand_${number}.png`} alt="brand_${number"/>
                             </div>
-
                         </SplideSlide>
                     ))}
-
-
                 </Splide>
             </div>
         </div>
